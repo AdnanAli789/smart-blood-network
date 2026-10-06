@@ -1,41 +1,148 @@
-# Smart Blood Network
+# 🩸 Smart Blood Network
 
-A responsive blood donor coordination app with a React/Vite/Tailwind client and an Express/SQLite API.
+Smart Blood Network is a web-based blood donation and emergency blood request management system designed to connect blood donors with patients who need blood.
 
-## Requirements
+The system helps manage donors, blood requests, compatible blood matching, donor responses, request completion, and analytics through a centralized dashboard.
 
-- Node.js 18+
-- npm 9+
+## 🚀 Features
 
-## Setup and run
+- Donor Registration and Management
+- Patient Blood Request Management
+- Blood Group Compatibility Matching
+- Distance-based Donor Matching
+- Urgency and Critical Request Tracking
+- Donor Availability and Verification
+- Donor Response Management
+- Request Completion Tracking
+- Dashboard with Statistics
+- Analytics for Blood Groups, Requests and Urgency
+- SQLite Database
+- REST API using Express.js
 
-```bash
-cd D:\python\smart-blood-network-web
+## 🔄 System Workflow
+
+Donor Registration
+↓
+Patient Blood Request
+↓
+Blood Compatibility Matching
+↓
+Donor Response
+↓
+Request Completion
+↓
+Dashboard & Analytics
+
+## 🛠️ Technologies Used
+
+### Frontend
+- React
+- Vite
+- JavaScript
+- HTML
+- CSS
+
+### Backend
+- Node.js
+- Express.js
+- REST API
+
+### Database
+- SQLite
+- better-sqlite3
+
+### Development Tools
+- VS Code
+- Git
+- GitHub
+- npm
+
+## 📂 Project Structure
+
+smart-blood-network-web/
+│
+├── client/
+│   └── Frontend application
+│
+├── server/
+│   └── Backend API and database
+│
+├── package.json
+├── package-lock.json
+├── README.md
+└── .gitignore
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+
+git clone https://github.com/AdnanAli789/smart-blood-network.git
+
+### 2. Open the Project
+
+cd smart-blood-network
+
+### 3. Install Dependencies
+
 npm install
 npm run install:all
+
+### 4. Start the Application
+
 npm run dev
-```
 
-Open `http://localhost:5173`. The API runs at `http://localhost:4000` (the Vite dev server proxies `/api`).
+The application will run on:
 
-For a production build:
+Frontend: http://localhost:5173
+Backend: http://localhost:4000
 
-```bash
-npm run build
-npm start
-```
+## 🔌 API Endpoints
 
-The SQLite database is created at `server/data/blood-network.db` on first start. Sample donors, requests, and responses are seeded automatically when the database is empty.
+### Donors
 
-## Included workflows
+GET    /api/donors
+POST   /api/donors
+PATCH  /api/donors/:id
 
-- Dashboard summary, urgent request alerts, recent activity, and analytics
-- Donor registration, searchable donor list, availability and verification status
-- Blood request creation, list/detail views, priority and status tracking
-- Compatibility-aware matching using ABO/Rh compatibility and distance
-- Verification controls for donors and requests
-- Accept/decline donor responses and completion of fulfilled requests
+### Blood Requests
 
-## API
+GET    /api/requests
+POST   /api/requests
+PATCH  /api/requests/:id
+GET    /api/requests/:id
+GET    /api/requests/:id/matches
+POST   /api/requests/:id/responses
+POST   /api/requests/:id/complete
 
-`GET /api/dashboard`, `GET/POST/PATCH /api/donors`, `GET/POST/PATCH /api/requests`, `GET /api/requests/:id/matches`, `POST /api/requests/:id/responses`, `PATCH /api/responses/:id`, `POST /api/requests/:id/complete`, and `GET /api/analytics`.
+### Responses
+
+PATCH  /api/responses/:id
+
+### Dashboard & Analytics
+
+GET    /api/dashboard
+GET    /api/analytics
+
+## 🎯 Main Objective
+
+The main objective of Smart Blood Network is to provide a simple digital platform for managing blood donors and emergency blood requests while helping identify suitable donors based on blood compatibility, availability, verification, and distance.
+
+## 🏆 Hackathon Project
+
+Smart Blood Network was developed as a hackathon project focused on solving a real-world healthcare and emergency blood management problem through technology.
+
+## 👨‍💻 Developer
+
+Adnan Ali
+
+Software Engineering Student
+
+GitHub:
+https://github.com/AdnanAli789
+
+LinkedIn:
+https://linkedin.com/in/adnan-ali-569267323
+
+## 📜 License
+
+This project is developed for educational and hackathon purposes.
