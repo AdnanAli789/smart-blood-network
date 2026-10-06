@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{margin:0;background:#f8f7f5;color:#17212b;font-family:'DM Sans',sans-serif}h1,h2,h3,h4{font-family:'Manrope',sans-serif}.card{background:#fff;border:1px solid #ece9e6;border-radius:18px;box-shadow:0 5px 20px rgba(23,33,43,.04)}.btn{border-radius:10px;padding:.65rem 1rem;font-weight:600;transition:.2s}.btn-primary{background:#c83b4b;color:#fff}.btn-primary:hover{background:#a92c3b}.btn-muted{background:#f1efed;color:#39454e}.input{width:100%;box-sizing:border-box;border:1px solid #ddd8d4;border-radius:10px;padding:.7rem .8rem;background:#fff;outline:none}.input:focus{border-color:#c83b4b;box-shadow:0 0 0 3px #c83b4b18}.badge{font-size:.73rem;font-weight:700;border-radius:999px;padding:.25rem .6rem;display:inline-block}
